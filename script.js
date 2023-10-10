@@ -55,6 +55,7 @@ function computerPlay() {
         if (choice === null) return null;
         
         choice = choice.toLowerCase();
+        choice = choice.trim();
         if (["rock", "paper", "scissors"].includes(choice)) {
           return choice;
         } else {
